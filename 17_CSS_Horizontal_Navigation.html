@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+    body{
+        margin: 0;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+        nav{
+            background-color: black;
+            overflow: hidden; /*see the below*/
+            position: fixed;
+            top: 0;
+        }
+        .maincontent{
+            margin: 80px 25px 25px 25px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        nav ul li {
+            float: left;  /*this property will overflow the background color for this we nned to a overflow: hidden to ul*/
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 20px;
+
+        }
+        nav ul li a:hover {
+            background-color: #56E9D3;
+            border-radius: 10px;
+
+        }
+        nav ul li a.active{
+            background-color: red;
+            border-radius: 10px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                 <a href="#" class="active">
+                   <i class="fa fa-home"></i> Home
+                </a>
+            </li>
+            <li>
+                <a href="#"> 
+                    <i class="fa fa-id-card"></i> About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-graduation-cap"></i>
+                Careers</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa fa-envolape"></i>  Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainContent">
+        <h1>Page Content here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+
+    </div>
+</body>
+</html>

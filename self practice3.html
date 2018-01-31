@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> css cloud effect</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			background-image: url("img/mypic.jpg");
+			background-size: cover;
+			height: 650px;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+		.container img {
+			width: 100%;
+		}
+		.container .cloud1 {
+			position: absolute;
+			top: 60px;
+			animation: cloudone infinite 30s linear;
+		}
+		.container .cloud2 {
+			position: absolute;
+			top: -50px;
+			animation: cloudtwo infinite 45s linear;
+		}
+		.container .cloud3 {
+			position: absolute;
+			top: 0px;
+			animation: cloudthree infinite 15s linear;
+		}
+		.container .cloud4 {
+			position: absolute;
+			top: 0px;
+			animation: cloudfour infinite 60s linear;
+		}
+
+		@keyframes cloudone{
+			0%{
+				transform: translateX(-100%);
+			}
+			100%{
+				transform: translateX(100%);
+			}
+		}
+		@keyframes cloudtwo{
+			0%{
+				transform: translateX(-100%);
+			}
+			100%{
+				transform: translateX(100%);
+			}
+		}
+		@keyframes cloudthree{
+			0%{
+				transform: translateX(-100%);
+			}
+			100%{
+				transform: translateX(100%);
+			}
+		}
+		@keyframes cloudfour{
+			0%{
+				transform: translateX(-100%);
+			}
+			100%{
+				transform: translateX(100%);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="cloud1"><img src="img/cloud1.png"></div>
+		<div class="cloud2"><img src="img/cloud2.png"></div>
+		<div class="cloud3"><img src="img/cloud1.png"></div>
+		<div class="cloud4"><img src="img/cloud2.png"></div>
+	</div>
+
+</body>
+</html>

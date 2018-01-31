@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+    h2{
+    	color: #0D9E13;
+    	font-style: italic;
+    	font-size: 20px;
+    	background-color: #36FFFF;
+    }
+    	.backgroundImage{
+    		background-image: url("img/background.jpg");
+    		height: 100px;
+    		background-repeat: no-repeat;
+    		padding: 10px;
+    	}
+    	.imagePosition{
+    		height: 100px;
+    		background-image: url("img/gallery3.jpeg");
+    		background-position: right bottom;
+    		background-repeat: no-repeat;
+    	}
+    	.imageRepeat{
+    		background-color: lightgray;
+    		height: 300px;
+    		background-image: url("img/nature.jpg");
+    		background-repeat: repeat-x;
+    	}
+    	.bacakgroundAttachement{
+    		height: 100px;
+    		background: white 
+    		            url("img/gallery2.jpeg") 
+    		            no-repeat fixed left top;
+    	}
+    </style>
+
+</head>
+<body>
+
+<!--BACKGROUND COLOR-->
+<h2> BACKGROUND COLOR </h2>
+<p style="background-color: teal;">I am TEAL background</p>
+
+
+
+
+<!-- BACKGROUND IMAGE -->
+<h2> BACKGROUND IMAGE</h2>
+<div class="backgroundImage">
+<p> This is a background image. </p>
+</div>
+
+
+<!--background attechement-->
+<h2>background attachement</h2>
+<div class="bacakgroundAttachement">
+</div>
+
+
+
+
+<br>
+<!-- BACKGROUND IMAGE POSITION -->
+
+<h2> Background image position </h2>
+<div class="imagePosition">
+	<p
+</div>
+<br>
+<!-- BACKGROUND IMAGE REPEAT -->
+<div class="imageRepeat">
+</div>
+
+</body>
+</html>

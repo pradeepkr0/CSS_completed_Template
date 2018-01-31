@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS LINKS</title>
+    <style>
+    	#bordered{
+    		text-decoration: none; /*remove underline */
+    		color: black;
+    		margin-left: 100px;
+    		border: 2 px solid red;
+    		padding: 14px 18px;
+    		background-color: lightcoral;
+    	}
+    	#button{
+    		text-decoration: none;
+    		color: white;
+    		background-color: seagreen;
+    		padding: 14px 18px;
+    		font-size: 25px;
+
+    	}
+ 		 .button:link{
+ 		 	background-color: #68EF22;
+
+ 		 }
+ 		 .button:hover{
+ 		 	background-color: #32FFDE;
+ 		 }
+
+ 		 .button:active{
+ 		 	background-color: blue;
+
+ 		 }
+ 		 .button:visited{
+ 		 	background-color: teal;
+ 		 }
+
+    </style>
+</head>
+<body>
+
+    <!-- NORMAL LINK -->
+    <h2> NORMAL LINK</h2>
+    <a href="#"> Home </a>
+
+    <br>
+
+    <!-- NO UNDERLINE LINK -->
+    <h2> NO UNDERLINK LINK </h2>
+    <a href="#" style="text-decoration: none;"> google </a>
+
+    <br>
+
+    <!-- BORDERED LINK -->
+
+    <h2> BORDER LINK </h2>
+    <a href="#" id="bordered"> border </a>
+
+    <!-- BUTTON LIKE LINK -->
+
+    <h3> BUTTON LIKE LINK </h3>
+    <a href="#" class="button" class="active" > Google </a>
+
+
+</body>  
+</html>

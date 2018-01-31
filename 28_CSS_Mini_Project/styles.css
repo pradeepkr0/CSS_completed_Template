@@ -1,0 +1,130 @@
+/* ----------- Main Header ----------- */
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 20px;
+ }
+
+/* -------- Main Navigation -------- */
+
+.main-nav{
+    background-color: #333333;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* mandatory */
+}
+
+.main-nav ul li{
+    float: left;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block; /* mandatory */
+    color: white;
+}
+
+.main-nav ul li a:hover{
+    background-color: #768065;
+}
+
+.main-nav ul li a.active{
+    background-color: #3b6136;
+}
+
+/* ---------- Flash News ------- */
+.flash-news{
+    background-color: seagreen;
+    margin-top: 2px;
+    font-size: 25px;
+    color: white;
+    animation-name: flash-news;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash-news {
+    0% , 50% , 100%{
+        background-color: seagreen;
+    }
+    25% , 75%{
+        background-color: #3b6136;
+    }
+}
+
+.flash-news p{
+    margin: 0;
+    line-height: 40px;
+    animation-name: news;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes news {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* -------- Home News Section ----------- */
+.news-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+
+.news-div{
+    border: 2px solid gray;
+    float: left;            /* be careful */
+    width: 320px;
+    margin: 5px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: width 0.5s , height 0.5s;
+}
+
+.news-div:hover{
+    width: 325px;
+    height: 560px;
+    box-shadow: 5px 5px 5px seagreen;
+}
+
+.news-heading{
+    padding: 10px;
+}
+
+.news-div img{
+    width: 315px;
+    height: auto;
+}
+
+.news-div img:hover{
+    width: 320px;
+    height: auto;
+}
+
+.break{
+    clear: both;
+}

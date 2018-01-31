@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Buttons</title>
+    <style>
+        .button{
+            background-color: #0c8312;
+            color: white;
+            text-decoration: none;
+            border: none;
+            font-family: sans-serif;
+            padding: 14px 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            min-height: 50px;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: olivedrab;
+            color: black;
+            margin: 05px;
+            motion-offset: 20sec;
+        }
+        .button-outline{
+            background-color:white;
+            color: forestgreen;
+            text-decoration: none;
+            border: 2px solid forestgreen;
+            font-family: sans-serif;
+            padding: 14px 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            min-height: 50px;
+            cursor: pointer;
+        }
+        .button-outline:hover{
+            background-color: rgb(21, 219, 203);
+            color: rgb(173, 13, 13); 
+        }
+        .primary{
+            background-color: rgb(0, 195, 255);
+        }
+        .primary:hover{
+            background-color: rgb(228, 22, 211);
+            box-shadow:6px 6px 6px rgba(7, 112, 107, 0.479);
+        }
+        .secondary{
+            background-color: rgb(5, 54, 40);
+        }
+        .secondary:hover{
+            background-color: rgb(226, 212, 17);
+            box-shadow: 6px 6px 6px rgb(15, 230, 15);
+            }
+        .warning{
+            background-color: orange;
+        }
+        .warning:hover{
+            background-color: darkorange;
+            box-shadow: 6px 6px 6px rgb(172, 199, 21);
+        }
+        .danger{
+            background-color: red;
+        }
+        .danger:hover{
+            background-color: darkred;
+            box-shadow: 6px 6px 6px yellow;
+        }
+/*      .button{
+            background-color: blue;
+       }
+        .button:hover{
+            background-color: darkslateblue;
+            box-shadow: 2px 2px 2px tomato;
+        } 
+        
+*/
+
+        
+    </style>
+    
+</head>
+<body>
+
+<button>Default Button</button>
+<a href="#" class="button">Link</a>
+<button class="button">Button</button>
+<input class="button" type="button" value="Input">
+
+
+<hr>
+<button>Default Button</button>
+<a href="#" class="button-outline">Link</a>
+<button class="button-outline">Button</button>
+<input class="button-outline" type="button" value="Input">
+
+<hr>
+
+<button>Default Button</button>
+<button class="button primary">Primary</button>
+<button class="button secondary">Secondary</button>
+<button class="button button">Success</button>
+<button class="button warning">Warning</button>
+<button class="button danger">Danger</button>
+
+
+
+</body>
+</html>
